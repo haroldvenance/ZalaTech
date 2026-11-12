@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #0B1120;
+  color: #F8FAFC;
+  /* Ajout d'un motif de grille en arrière-plan */
+  background-image: 
+    linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+::selection {
+  background-color: #F97316;
+  color: #ffffff;
+}
+
+/* Scrollbar sombre */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #0B1120;
+}
+::-webkit-scrollbar-thumb {
+  background: #1E293B;
+  border-radius: 999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #F97316;
+}
+
+.section-eyebrow {
+  @apply inline-flex items-center gap-2 text-xs font-mono font-semibold tracking-[0.2em] uppercase text-zala-orange;
+}
+
+.section-container {
+  @apply mx-auto w-full max-w-7xl px-6 sm:px-8 lg:px-12;
+}
+
+.section-padding {
+  @apply py-20 md:py-28;
+}
+
+/* Effet de verre pour les cartes */
+.glass-card {
+  @apply bg-white/[0.03] backdrop-blur-md border border-white/10 rounded-2xl;
+}
