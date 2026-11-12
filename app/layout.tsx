@@ -3,15 +3,15 @@ import "./globals.css";
 import FloatingWhatsapp from "@/components/FloatingWhatsapp";
 import { PreferencesProvider } from "@/components/Preferences";
 
-// Remplace cette URL par ton futur nom de domaine si tu en achètes un
-const baseUrl = "https://zala-tech.vercel.app"; 
+// ⚠️ CORRECTION ICI : L'URL exacte de ton site Vercel
+const baseUrl = "https://zalatech-site.vercel.app";
 
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
   title: "Zala Tech | Ingénierie Logicielle & Systèmes Intelligents",
   description: "Zala Tech conçoit des systèmes intelligents, sécurisés et évolutifs. Expertise en Data/IA, cybersécurité applicative et blockchain.",
   
-  // C'est ici que l'image est configurée pour WhatsApp / LinkedIn / Facebook
+  // Configuration OpenGraph (WhatsApp, LinkedIn, Facebook)
   openGraph: {
     title: "Zala Tech | Ingénierie Logicielle & Systèmes Intelligents",
     description: "Bâtir des systèmes intelligents. Protéger ce qui compte. Découvrez notre expertise en Data/IA, Sécurité et Web3.",
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     siteName: "Zala Tech",
     images: [
       {
-        url: "/og-image.jpg", // Le chemin vers ton image dans le dossier public
+        url: "/og-image.jpg", // L'image doit être dans le dossier public/
         width: 1200,
         height: 630,
         alt: "Zala Tech - Engineering Studio",
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     type: "website",
   },
   
-  // Configuration pour Twitter (X)
+  // Configuration Twitter (X)
   twitter: {
     card: "summary_large_image",
     title: "Zala Tech | Ingénierie Logicielle & Systèmes Intelligents",
